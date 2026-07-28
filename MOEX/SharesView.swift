@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SharesView: View {
+    @EnvironmentObject var settings: AppSettings
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +21,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    SharesView()
 }
