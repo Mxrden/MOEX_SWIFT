@@ -11,6 +11,6 @@ import SwiftUI
 struct SettingsVIew: View {
     @EnvironmentObject var settings: AppSettings
     var body: some View {
-        
+        Text("Settings")
     }
 }
