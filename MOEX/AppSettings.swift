@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import Combine
+
+class AppSettings: ObservableObject {
+    @Published var selectedLanguage = "en"
+}
