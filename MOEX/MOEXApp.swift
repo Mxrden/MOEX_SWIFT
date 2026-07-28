@@ -11,7 +11,7 @@ import SwiftUI
 struct MOEXApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SharesView()
         }
     }
 }
