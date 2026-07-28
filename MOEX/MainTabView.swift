@@ -30,7 +30,7 @@ struct MainTabView: View {
                 }
                 .tag(2)
         }
-        .environment(\.locale, Locale(identifier: settings.selectedLanguage))   
+        .environment(\.locale, Locale(identifier: settings.selectedLanguage))
     }
 }
 

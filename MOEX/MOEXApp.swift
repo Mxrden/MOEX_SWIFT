@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MOEXApp: App {
+    @StateObject private var settings = AppSettings()
     var body: some Scene {
         WindowGroup {
-            SharesView()
+            MainTabView()
+                .environmentObject(settings)
+                .environment(\.locale, Locale(identifier: settings.selectedLanguage))
         }
     }
 }
